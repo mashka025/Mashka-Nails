@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Masha Nails | Maralal, Samburu County</title>
+
+<meta name="description" content="Masha Nails - Professional nail care, manicure, pedicure, nail extensions, nail art, gel polish and more in Maralal, Samburu County.">
+
+<style>
+
+:root {
+    --pink: #ec2f70;
+    --dark-pink: #a8124b;
+    --light-pink: #fff0f6;
+    --soft-pink: #ffd4e5;
+    --text: #4b2434;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: #fff8fb;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,0.97);
+    box-shadow: 0 2px 15px rgba(184,23,77,0.15);
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--dark-pink);
+}
+
+.logo span {
+    color: var(--pink);
+}
+
+nav ul {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+}
+
+nav a:hover {
+    color: var(--pink);
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    background: var(--pink);
+    color: white;
+    padding: 13px 22px;
+    border-radius: 30px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--dark-pink);
+    transform: translateY(-2px);
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(135deg, #ffd8e7, #fff8fb);
+    padding: 80px 20px;
+}
+
+.hero-inner {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.badge {
+    color: var(--pink);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.05;
+    color: var(--dark-pink);
+    margin: 12px 0;
+}
+
+.hero p {
+    font-size: 19px;
+    margin: 15px 0 25px;
+}
+
+.contact-line {
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.hero-card {
+    background: linear-gradient(145deg, #f45b91, #b91450);
+    min-height: 360px;
+    border-radius: 35px;
+    padding: 35px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(185,20,80,0.2);
+}
+
+.hero-card .nails {
+    font-size: 90px;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 70px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--dark-pink);
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 0 auto 35px;
+    max-width: 700px;
+}
+
+/* SERVICES */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service {
+    background: white;
+    border: 1px solid #ffd0e0;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(185,20,80,0.08);
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(185,20,80,0.15);
+}
+
+.service h3 {
+    color: var(--dark-pink);
+    margin: 8px 0;
+}
+
+.icon {
+    font-size: 34px;
+}
+
+.service .btn {
+    padding: 9px 16px;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+/* ABOUT */
+
+.about {
+    background: var(--light-pink);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.about-box {
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.about-box li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.about-box li::before {
+    content: "✓";
+    color: var(--pink);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* BOOKING */
+
+.booking {
+    background: linear-gradient(135deg, #fff, #ffd9e8);
+    text-align: center;
+}
+
+.booking .phone {
+    font-size: 28px;
+    color: var(--dark-pink);
+    font-weight: 800;
+    margin: 18px;
+}
+
+.booking-form {
+    max-width: 720px;
+    margin: 30px auto 0;
+    background: #fff;
+    padding: 28px;
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(185,20,80,0.1);
+    text-align: left;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-weight: 700;
+    color: var(--dark-pink);
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    font: inherit;
+    padding: 13px 14px;
+    border: 1px solid #f3b6ca;
+    border-radius: 12px;
+    background: #fff8fb;
+    color: var(--text);
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--pink);
+    box-shadow: 0 0 0 3px rgba(236,47,112,0.12);
+}
+
+.booking-form .btn {
+    width: 100%;
+    margin-top: 18px;
+    font-size: 16px;
+}
+
+.form-note {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    color: #775260;
+}
+
+/* GALLERY */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery div {
+    height: 170px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #ffb2cc, #ffe8f1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52px;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--dark-pink);
+    color: white;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 8px;
+}
+
+/* MOBILE */
+
+@media(max-width:800px) {
+
+    nav ul {
+        display: none;
+    }
+
+    .hero-inner,
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:520px) {
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 55px 20px;
+    }
+
+    .hero-card {
+        min-height: 250px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full {
+        grid-column: auto;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<nav>
+
+<a class="logo" href="#home">
+💅 Masha <span>Nails</span>
+</a>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<a class="btn"
+href="https://wa.me/254769989022?text=Hello%20Masha%20Nails%2C%20I%20would%20like%20to%20book%20a%20nail%20service.">
+Book Now
+</a>
+
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<main>
+
+<section class="hero" id="home">
+
+<div class="hero-inner">
+
+<div>
+
+<div class="badge">
+WELCOME TO MASHA NAILS 💗
+</div>
+
+<h1>
+Beauty at Your Fingertips
+</h1>
+
+<p>
+Professional nail care and beautiful nail designs in a clean,
+comfortable and friendly environment.
+</p>
+
+<div class="contact-line">
+📍 Maralal, Samburu County, Kenya
+</div>
+
+<div class="contact-line">
+📱 0769 989 022
+</div>
+
+<br>
+
+<a class="btn"
+href="https://wa.me/254769989022?text=Hello%20Masha%20Nails%2C%20I%20would%20like%20to%20book%20a%20nail%20service.">
+💬 Book on WhatsApp
+</a>
+
+</div>
+
+
+<div class="hero-card">
+
+<div>
+
+<div class="nails">
+💅✨
+</div>
+
+<h2>
+Look Beautiful.<br>
+Feel Fabulous.
+</h2>
+
+<p>
+Quality nail care in Maralal.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Nail Services
+</h2>
+
+<p class="subtitle">
+Choose your favourite service and book directly through WhatsApp.
+</p>
+
+
+<div class="services">
+
+
+<div class="service">
+
+<div class="icon">💅</div>
+
+<h3>
+Manicure
+</h3>
+
+<p>
+Nail shaping, cuticle care, hand massage and polish.
+</p>
+
+<a class="btn"
+href="https://wa.me/254769989022?text=Hello%20Masha%20Nails%2C%20I%20want%20to%20book%20a%20Manicure.">
+Book
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🦶</div>
+
+<h3>
+Pedicure
+</h3>
+
+<p>
+Foot soak, exfoliation, nail care and beautiful polish.
+</p>
+
+<a class="btn"
+href="https://wa.me/254769989022?text=Hello%20Masha%20Nails%2C%20I%20want%20to%20book%20a%20Pedicure.">
+Book
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">✨</div>
+
+<h3>
+Nail Extensions
+</h3>
+
+<p>
+Acrylic, gel and polygel extensions for your perfect look.
+</p>
+
+<a class="btn"
+href="https://wa.me/254769989022?text=Hello%20Masha%20Nails%2C%20I%20want%20to%20book%20Nail%20Extensions.">
+Book
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🎨</div>
+
+<h3>
+Nail Art
+</h3>
+
+<p>
+Custom designs, gems, French tips, 3D art and more.
+</p>
+
+<a class="btn"
+href="https://wa.me/254769989022?text=Hello%20Masha%20Nails%2C%20I%20want%20to%20book%20Nail%20Art.">
+Book
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">💖</div>
+
+<h3>
+Gel Polish
+</h3>
+
+<p>
+Long-lasting gel polish in beautiful colours and finishes.
+</p>
+
+<a class="btn"
+href="https://wa.me/254769989022?text=Hello%20Masha%20Nails%2C%20I%20want%20to%20book%20Gel%20Polish.">
+Book
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🛠️</div>
+
+<h3>
+Nail Repair
+</h3>
+
+<p>
+Repair, refill and strengthening services for damaged nails.
+</p>
+
+<a class="btn"
+href="https://wa.me/254769989022?text=Hello%20Masha%20Nails%2C%20I%20want%20to%20book%20Nail%20Repair.">
+Book
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">💎</div>
+
+<h3>
+Chrome & Glitter
+</h3>
+
+<p>
+Glossy chrome, glitter and sparkling finishes.
+</p>
+
+<a class="btn"
+href="https://wa.me/254769989022?text=Hello%20Masha%20Nails%2C%20I%20want%20to%20book%20Chrome%20or%20Glitter%20Nails.">
+Book
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🌸</div>
+
+<h3>
+French Tips
+</h3>
+
+<p>
+Classic and modern French-tip designs in your favourite style.
+</p>
+
+<a class="btn"
+href="https://wa.me/254769989022?text=Hello%20Masha%20Nails%2C%20I%20want%20to%20book%20French%20Tips.">
+Book
+</a>
+
+</div>
+
+
+<div class="service">
+
+<div class="icon">🔄</div>
+
+<h3>
+Refill & Removal
+</h3>
+
+<p>
+Professional nail refill and safe product removal.
+</p>
+
+<a class="btn"
+href="https://wa.me/254769989022?text=Hello%20Masha%20Nails%2C%20I%20want%20to%20book%20a%20Refill%20or%20Removal.">
+Book
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="container about-grid">
+
+
+<div class="about-box">
+
+<h2 class="section-title" style="text-align:left">
+About Masha Nails
+</h2>
+
+<p>
+At Masha Nails, we are passionate about helping every customer
+feel confident and beautiful. We provide quality nail services
+with attention to detail and customer satisfaction.
+</p>
+
+<ul>
+
+<li>Professional nail care</li>
+
+<li>Clean and hygienic service</li>
+
+<li>Beautiful custom designs</li>
+
+<li>Friendly customer service</li>
+
+<li>Convenient WhatsApp booking</li>
+
+</ul>
+
+</div>
+
+
+<div class="about-box">
+
+<h2 class="section-title">
+Book Your Appointment
+</h2>
+
+<p>
+Tell us the service you want and your preferred appointment time.
+We will respond through WhatsApp.
+</p>
+
+<div class="phone">
+0769 989 022
+</div>
+
+<a class="btn"
+href="https://wa.me/254769989022?text=Hello%20Masha%20Nails%2C%20I%20would%20like%20to%20book%20an%20appointment.">
+💬 WhatsApp Masha Nails
+</a>
+
+<p style="margin-top:18px">
+📍 Maralal, Samburu County, Kenya
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Work 💗
+</h2>
+
+<p class="subtitle">
+Beautiful nail designs for every occasion.
+</p>
+
+<div class="gallery">
+
+<div>💅</div>
+<div>💗</div>
+<div>✨</div>
+<div>🌸</div>
+<div>💎</div>
+<div>🎀</div>
+<div>🌷</div>
+<div>💅</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BOOKING -->
+
+<section class="booking" id="contact">
+
+<div class="container">
+
+<h2 class="section-title">
+Book Your Appointment 💗
+</h2>
+
+<p>
+Choose the service you need, select your preferred date and time,
+then send your booking directly to Masha Nails on WhatsApp.
+</p>
+
+
+<form class="booking-form" id="bookingForm">
+
+
+<div class="form-grid">
+
+
+<div class="form-group">
+
+<label for="name">
+Your Name *
+</label>
+
+<input
+id="name"
+type="text"
+placeholder="Enter your name"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="phone">
+Your Phone Number *
+</label>
+
+<input
+id="phone"
+type="tel"
+placeholder="e.g. 0712345678"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="service">
+Service Needed *
+</label>
+
+<select id="service" required>
+
+<option value="">
+-- Select a service --
+</option>
+
+<option>
+Manicure
+</option>
+
+<option>
+Pedicure
+</option>
+
+<option>
+Nail Extensions
+</option>
+
+<option>
+Nail Art
+</option>
+
+<option>
+Gel Polish
+</option>
+
+<option>
+Nail Repair
+</option>
+
+<option>
+Chrome & Glitter
+</option>
+
+<option>
+French Tips
+</option>
+
+<option>
+Refill & Removal
+</option>
+
+<option>
+Other / Not sure
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="date">
+Preferred Date *
+</label>
+
+<input
+id="date"
+type="date"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="time">
+Preferred Time *
+</label>
+
+<input
+id="time"
+type="time"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="guests">
+Number of Clients
+</label>
+
+<select id="guests">
+
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group full">
+
+<label for="message">
+Additional Request
+</label>
+
+<textarea
+id="message"
+rows="3"
+placeholder="Tell us about your preferred nail design, colour, or any other request.">
+</textarea>
+
+</div>
+
+
+</div>
+
+
+<button
+class="btn"
+type="submit">
+
+💬 SEND BOOKING TO WHATSAPP
+
+</button>
+
+
+<p class="form-note">
+
+Your booking details will open in WhatsApp to
+<strong>0769 989 022</strong>.
+Masha Nails will confirm your appointment.
+
+</p>
+
+
+</form>
+
+
+<p style="margin-top:25px">
+
+📍 Maralal, Samburu County, Kenya
+&nbsp; | &nbsp;
+📱 0769 989 022
+
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>
+💅 Masha Nails
+</h2>
+
+<p>
+Beauty at Your Fingertips 💗
+</p>
+
+<p>
+Professional nail services in Maralal, Samburu County.
+</p>
+
+<p>
+WhatsApp: 0769 989 022
+</p>
+
+<p>
+© 2026 Masha Nails. All Rights Reserved.
+</p>
+
+</footer>
+
+
+<!-- WHATSAPP BOOKING SCRIPT -->
+
+<script>
+
+document
+.getElementById("bookingForm")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name =
+    document.getElementById("name").value.trim();
+
+    const phone =
+    document.getElementById("phone").value.trim();
+
+    const service =
+    document.getElementById("service").value;
+
+    const date =
+    document.getElementById("date").value;
+
+    const time =
+    document.getElementById("time").value;
+
+    const guests =
+    document.getElementById("guests").value;
+
+    const message =
+    document.getElementById("message").value.trim();
+
+
+    const formattedDate =
+    date
+    ? new Date(date + "T00:00:00")
+        .toLocaleDateString("en-KE", {
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+        })
+    : date;
+
+
+    const whatsappMessage =
+
+`Hello Masha Nails 💗
+
+I would like to book an appointment.
+
+👤 Name: ${name}
+
+📱 My phone: ${phone}
+
+💅 Service needed: ${service}
+
+📅 Preferred date: ${formattedDate}
+
+⏰ Preferred time: ${time}
+
+👥 Number of clients: ${guests}
+
+📝 Additional request:
+${message || "None"}
+
+Please confirm availability.
+
+Thank you!`;
+
+
+    const whatsappURL =
+    "https://wa.me/254769989022?text="
+    + encodeURIComponent(whatsappMessage);
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+});
+
+</script>
+
+
+</body>
+</html>
